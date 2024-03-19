@@ -4513,7 +4513,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
 			(at 45.72 158.7499 0)
 			(effects
 				(font
@@ -4709,7 +4709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
 			(at 45.72 171.4499 0)
 			(effects
 				(font
@@ -5063,7 +5063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
 			(at 45.72 152.4 0)
 			(effects
 				(font
@@ -5193,7 +5193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
 			(at 45.72 165.0999 0)
 			(effects
 				(font
