@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "sbb")(type "KiCad")(uri "C:/Work/sbb_pcbs/library/sbb.pretty")(options "")(descr ""))
+)
