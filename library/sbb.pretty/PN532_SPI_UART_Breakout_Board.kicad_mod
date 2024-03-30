@@ -78,7 +78,7 @@
 		(layer "F.SilkS")
 		(uuid "3442a38c-8427-4de6-8d72-67b679adc47b")
 	)
-	(fp_text user "SCL/TX"
+	(fp_text user "SCL/RX"
 		(at 1.27 8.255 0)
 		(unlocked yes)
 		(layer "F.SilkS")
@@ -91,7 +91,7 @@
 			(justify left bottom)
 		)
 	)
-	(fp_text user "SDA/RX"
+	(fp_text user "SDA/TX"
 		(at 1.27 5.715 0)
 		(unlocked yes)
 		(layer "F.SilkS")

@@ -5,7 +5,7 @@
 	(uuid "afda072b-5e00-4ac3-9ca3-26931d0f3c41")
 	(paper "A4")
 	(title_block
-		(title "Sumitomo Node v2")
+		(title "Sumitomo Node v2.1")
 		(company "Cirotec Automation")
 	)
 	(lib_symbols
@@ -2925,10 +2925,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 0 -5.08 0)
 					(length 2.54)
-					(name "SDA/RX"
+					(name "SDA/TX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2943,10 +2943,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at 0 -7.62 0)
 					(length 2.54)
-					(name "SCL/TX"
+					(name "SCL/RX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3238,6 +3238,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 104.14) (xy 120.65 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43db8d78-2fee-4cdc-a21e-36f3506d09e0")
+	)
+	(wire
+		(pts
 			(xy 48.26 99.06) (xy 63.5 99.06)
 		)
 		(stroke
@@ -3428,26 +3438,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 99.06) (xy 120.65 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3580c2-0221-4b8b-a32c-215b1eb0fbea")
-	)
-	(wire
-		(pts
-			(xy 107.95 96.52) (xy 120.65 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8232524b-afc4-49c4-8b74-76d903710fce")
-	)
-	(wire
-		(pts
 			(xy 154.94 57.15) (xy 168.91 57.15)
 		)
 		(stroke
@@ -3535,6 +3525,16 @@
 			(type default)
 		)
 		(uuid "ab695eb1-be33-4a88-b4d0-89aa1eb2f213")
+	)
+	(wire
+		(pts
+			(xy 107.95 101.6) (xy 120.65 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0225ba8-79e5-42c0-a269-fdcf8d151ad0")
 	)
 	(wire
 		(pts
@@ -3816,17 +3816,6 @@
 		)
 		(uuid "fe18e9f6-b6d0-4735-b4d6-44545042e330")
 	)
-	(label "pn532_tx"
-		(at 113.03 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "019e368a-cf48-41ea-87a5-8736fd8fb70d")
-	)
 	(label "led_yellow"
 		(at 238.76 81.28 90)
 		(fields_autoplaced yes)
@@ -3860,7 +3849,7 @@
 		)
 		(uuid "170aaa04-40fa-4cdc-a492-83a23a32b3fc")
 	)
-	(label "pn532_rx"
+	(label "pn532_tx"
 		(at 162.56 99.06 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4069,7 +4058,7 @@
 		)
 		(uuid "80d3ff68-8e78-473a-9974-f7858166050d")
 	)
-	(label "pn532_tx"
+	(label "pn532_rx"
 		(at 162.56 101.6 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4101,6 +4090,17 @@
 			(justify left bottom)
 		)
 		(uuid "923c8d49-efed-4da9-b739-b6cd5b2c51be")
+	)
+	(label "pn532_tx"
+		(at 113.03 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b57f0eb-ec84-428f-9f19-fdd27e7f03d3")
 	)
 	(label "sw_8"
 		(at 49.53 91.44 0)
@@ -4146,6 +4146,17 @@
 		)
 		(uuid "c40dfa1d-b1e7-4bc8-b39f-57866a66dc2a")
 	)
+	(label "pn532_rx"
+		(at 113.03 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d18c9e00-7d8d-4512-9410-557ccebd5909")
+	)
 	(label "sw_3"
 		(at 49.53 104.14 0)
 		(fields_autoplaced yes)
@@ -4178,17 +4189,6 @@
 			(justify left bottom)
 		)
 		(uuid "e3127576-46d0-4259-81e3-311189632ffa")
-	)
-	(label "pn532_rx"
-		(at 113.03 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e465b397-8e53-42e1-bdc7-5cc2d08fff73")
 	)
 	(label "sw_4"
 		(at 49.53 101.6 0)
@@ -4513,7 +4513,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
 			(at 45.72 158.7499 0)
 			(effects
 				(font
@@ -4709,7 +4709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
 			(at 45.72 171.4499 0)
 			(effects
 				(font
@@ -5063,7 +5063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
 			(at 45.72 152.4 0)
 			(effects
 				(font
@@ -5193,7 +5193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_ISO7380"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
 			(at 45.72 165.0999 0)
 			(effects
 				(font
