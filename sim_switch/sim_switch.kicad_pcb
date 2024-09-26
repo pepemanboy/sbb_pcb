@@ -45,7 +45,7 @@
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions yes)
+			(usegerberextensions no)
 			(usegerberattributes no)
 			(usegerberadvancedattributes no)
 			(creategerberjobfile no)
@@ -67,11 +67,11 @@
 			(psnegative no)
 			(psa4output no)
 			(plotreference yes)
-			(plotvalue yes)
+			(plotvalue no)
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
@@ -233,7 +233,7 @@
 	(footprint "MountingHole:MountingHole_2.1mm"
 		(layer "F.Cu")
 		(uuid "38be05d5-ece5-440e-a2ea-392acd95007f")
-		(at 166 57)
+		(at 165.5 57)
 		(descr "Mounting Hole 2.1mm, no annular")
 		(tags "mounting hole 2.1mm no annular")
 		(property "Reference" "H1"
@@ -333,11 +333,11 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" np_thru_hole oval
 			(at 0 0)
-			(size 2.1 2.1)
-			(drill 2.1)
-			(layers "*.Cu" "*.Mask")
+			(size 3.1 2.1)
+			(drill oval 3.1 2.1)
+			(layers "F&B.Cu" "*.Mask")
 			(uuid "fe165e22-9c94-433c-9601-34ae56d25339")
 		)
 	)
@@ -346,7 +346,7 @@
 		(uuid "57f33ed2-3489-4fcc-a300-27c29b8d5fdb")
 		(at 153.5 92.5)
 		(property "Reference" "U4"
-			(at -1 -6.5 0)
+			(at -2.5 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "110651e2-f10f-4b42-b050-612ad45ad91e")
@@ -478,7 +478,7 @@
 		(uuid "9bef14e2-4583-41b3-8084-548885df12a8")
 		(at 153.5 60 180)
 		(property "Reference" "U5"
-			(at 5 4.5 0)
+			(at 3 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "eebd050c-4fd1-4b26-b77a-edb1cbb1b2fd")
@@ -610,7 +610,7 @@
 		(uuid "ab372ea5-bcc9-4ad8-935c-74cc8746e3e7")
 		(at 145 85)
 		(property "Reference" "U1"
-			(at -24 6.5 0)
+			(at -0.5 3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "103f0bd8-0b60-41c7-abae-756dad6014d2")
@@ -748,18 +748,6 @@
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at -24 9.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "27ba6351-6288-4d49-b7de-0e2bac060c12")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
 			)
 		)
 		(pad "1" thru_hole oval
@@ -1126,7 +1114,7 @@
 	(footprint "MountingHole:MountingHole_2.1mm"
 		(layer "F.Cu")
 		(uuid "d7809d6b-fc67-4406-baee-3647bfd3afcf")
-		(at 166 95)
+		(at 165.5 95)
 		(descr "Mounting Hole 2.1mm, no annular")
 		(tags "mounting hole 2.1mm no annular")
 		(property "Reference" "H2"
@@ -1226,17 +1214,17 @@
 				)
 			)
 		)
-		(pad "" np_thru_hole circle
+		(pad "" np_thru_hole oval
 			(at 0 0)
-			(size 2.1 2.1)
-			(drill 2.1)
-			(layers "*.Cu" "*.Mask")
+			(size 3.1 2.1)
+			(drill oval 3.1 2.1)
+			(layers "F&B.Cu" "*.Mask")
 			(uuid "f459b66e-9f55-4dd3-b46b-d69cdd4840f2")
 		)
 	)
 	(gr_rect
 		(start 140 54.5)
-		(end 168 98)
+		(end 168 97.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -1246,7 +1234,7 @@
 		(uuid "4d6ed641-fc3c-49e8-9ed0-5e357da48f2c")
 	)
 	(gr_text "INPUT"
-		(at 151 93 0)
+		(at 153 93 0)
 		(layer "F.SilkS")
 		(uuid "202b3ff0-2661-46e9-b99b-d7a7fd7ba93d")
 		(effects
@@ -1257,8 +1245,20 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "CIROTEC\nAUTOMATION"
+		(at 140.5 58 0)
+		(layer "F.SilkS")
+		(uuid "297c1c04-0ae2-4df3-9b4e-48c6d0f5a2f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "OUTPUT"
-		(at 151 61 0)
+		(at 152 61 0)
 		(layer "F.SilkS")
 		(uuid "d347854b-4f8e-42bc-a8c7-dd2888c66c6f")
 		(effects
