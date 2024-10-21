@@ -1,0 +1,106 @@
+(footprint "Inductive_Sensor"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.5 -10.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2eae2b89-2817-4dac-ad7d-7579d30828fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Inductive_Sensor"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "59689209-4ce7-4850-b173-3ea6f760b96a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dfa0b47d-7196-46e8-8eb8-29a817b953c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8614ff4c-91c6-4d93-9163-9e3361a029bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "93ee4b83-9689-4c70-908b-fe17f0cdc4e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dc48eae3-b1d7-4036-a310-2fc1505a112b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 -2)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "053c003f-4809-4516-b91f-383eed643533")
+	)
+	(pad "2" thru_hole rect
+		(at 0 -5)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a39f1881-29e3-428e-b470-90b6c3277b73")
+	)
+	(pad "3" thru_hole rect
+		(at 0 -8)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7cf38dce-5aa4-454e-a737-234ffdb3866b")
+	)
+)
